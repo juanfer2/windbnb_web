@@ -3,44 +3,47 @@
 
   &-list {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    gap: 1em;
     list-style: none;
 
-    .logo {
-      display: none;
-
-      @media only screen and (min-width: 1200px) {
-        display: block;
-      }
-    }
-
-    .logo-mobile {
-      display: block;
-
-      @media only screen and (min-width: 1200px) {
-        display: none;
-      }
+    @media only screen and (min-width: 1200px) {
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
     }
 
     &-search {
       display: flex;
       justify-content: center;
-      align-items: center;
-      visibility: hidden;
-      gap: 1em;
-      padding: 0 15px 0 15px;
-      border-radius: 10px;
-      box-shadow: 0px 1px 6px 0px #0000001A;
-      text-align: center;
 
-      input {
-        border-radius: 0;
+      .container-items {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        padding: 0 15px 0 15px;
+        border-radius: 10px;
+        box-shadow: 0px 1px 6px 0px #0000001A;
+        height: 55px;
+
+        .search_guest {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #F2F2F2;
+          padding: 0 10px 0 10px;
+          border-left: 1px solid #F2F2F2;
+          border-right: 1px solid #F2F2F2;
+          height: 100%;
+          text-align: center;
+        }
+        
+       
       }
 
-      @media only screen and (min-width: 1200px) {
-        visibility: visible;
-      }
     }
   }
 

@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { updateStatus } from '@store/reducers/healt_reducer';
 import Card from '@components/Card';
 import Navbar from '@components/Navbar';
+import Title from '@components/Title';
 import DataApartment from '@assets/info/stays.json';
 
 export interface ApartmentI {
@@ -35,7 +36,7 @@ function App() {
       <Navbar />
 
       <div className="apartments-header">
-        <h1>Stays in Finland</h1>
+        <Title>Stays in Finland</Title>
         <span> 12+ stays </span>
       </div>
 

@@ -2,6 +2,7 @@ import React from 'react';
 import './Card.scss';
 // import ImageCard from '@assets/images/nature-image.jpg';
 import { MdStarRate } from 'react-icons/md';
+import Badge from '@components/Badges';
 
 export interface CardI {
   imageUrl?: string;
@@ -21,7 +22,7 @@ function Card({ imageUrl, superHost, description, title, starts }: CardI) {
       )}
 
       <div className="card-info">
-        {superHost && <div className="super-host">SUPER HOST</div>}
+        {superHost && <Badge>SUPER HOST</Badge>}
 
         <span className="description">{description}</span>
 
