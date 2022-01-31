@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './App.css';
+import './App.scss';
 import { StoreState } from '@store/config_store';
 import { useSelector, useDispatch } from 'react-redux';
 import { updateStatus } from '@store/reducers/healt_reducer';

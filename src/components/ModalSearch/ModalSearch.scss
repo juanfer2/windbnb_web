@@ -1,7 +1,5 @@
 
-/* The Modal (background) */
 .modal {
- /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
@@ -31,7 +29,6 @@
     align-items: center;
     position: absolute;
     background-color: #fefefe;
-    /*margin: auto; */
     padding: 20px;
     top: 0;
     width: 100%;
@@ -59,7 +56,6 @@
       align-items: center;
     }
   }
-
 
   .close:hover,
   .close:focus {

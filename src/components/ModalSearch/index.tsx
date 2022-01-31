@@ -11,7 +11,7 @@ export interface ModalSearchI {
 function ModalSearch({ open, setOpen }: ModalSearchI) {
   return (
     <div>
-      <div role="presentation" className={open ? 'modal modal__open' : 'modal modal__close'}>
+      <div className={open ? 'modal modal__open' : 'modal modal__close'}>
         <div
           className={
             open ? 'modal-display modal-display__open' : 'modal-display modal-display__close'
