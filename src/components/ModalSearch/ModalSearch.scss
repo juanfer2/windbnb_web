@@ -61,6 +61,34 @@
   .close:focus {
     cursor: pointer;
   }
+
+  .card-search {
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+
+    .card-container {
+      
+      display: flex;
+      flex-direction: column;
+
+      .items {
+        padding: 15px;
+
+        h4 {
+          font-size: 12px;
+          font-weight: 600;
+        }
+
+        h1 {
+          color:#BDBDBD;
+        }
+      }
+
+      .location {
+        border-bottom: 1px solid #F2F2F2;
+      }
+    }
+  }
 }
 
 

@@ -2,6 +2,7 @@ import React from 'react';
 import './ModalSearch.scss';
 import Title from '@components/Title';
 import { CloseIcon } from '@chakra-ui/icons';
+import CardSearch from './CardSearch';
 
 export interface ModalSearchI {
   open: boolean;
@@ -24,7 +25,7 @@ function ModalSearch({ open, setOpen }: ModalSearchI) {
           </header>
 
           <section className="modal-content">
-            <p>Some text in the Modal..</p>
+            <CardSearch />
           </section>
         </div>
       </div>
